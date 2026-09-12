@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AnKnows — Find the Right Words</title>
+
   <meta
     name="description"
     content="AnKnows helps you understand messages, explore possible replies, and express yourself more naturally."
@@ -13,6 +14,10 @@
   <style>
     * {
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -43,6 +48,11 @@
       color: #374151;
       text-decoration: none;
       font-size: 15px;
+      font-weight: 600;
+    }
+
+    .contact:hover {
+      text-decoration: underline;
     }
 
     .hero {
@@ -129,14 +139,14 @@
       text-decoration: none;
     }
 
-    footer a:hover,
-    .contact:hover {
+    footer a:hover {
       text-decoration: underline;
     }
 
     @media (max-width: 750px) {
       .hero {
         padding-top: 70px;
+        padding-bottom: 90px;
       }
 
       .features {
@@ -146,14 +156,21 @@
       h1 {
         letter-spacing: -1.5px;
       }
+
+      footer a {
+        display: block;
+        width: fit-content;
+        margin: 12px auto;
+      }
     }
   </style>
 </head>
 
 <body>
   <header>
-    <a class="brand" href="/">AnKnows</a>
-    <a class="contact" href="mailto:support@anknows.com">
+    <a class="brand" href="index.html">AnKnows</a>
+
+    <a class="contact" href="contact.html">
       Contact
     </a>
   </header>
@@ -178,6 +195,7 @@
     <section class="features">
       <article class="card">
         <h2>Understand</h2>
+
         <p>
           Explore possible meanings and context behind the messages you
           receive.
@@ -186,6 +204,7 @@
 
       <article class="card">
         <h2>Reply</h2>
+
         <p>
           Generate thoughtful reply options based on your situation and goals.
         </p>
@@ -193,6 +212,7 @@
 
       <article class="card">
         <h2>Your voice</h2>
+
         <p>
           Personalize tone, length, energy, and style so replies sound more
           like you.
@@ -207,7 +227,7 @@
     <p>
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Use</a>
-      <a href="mailto:support@anknows.com">Support</a>
+      <a href="contact.html">Support</a>
     </p>
   </footer>
 </body>
